@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Elements Demo</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="top-links">
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+            <a href="advanced.html">Advanced Search</a>
+            <a href="https://malousektomas.github.io/">Portfolio</a>
+        </nav>
+
+        <main class="forms-page">
+            <h1>Form elements</h1>
+            <p class="non-functional-note">This demonstration form is non-functional. It is included to show different form controls.</p>
+            <form class="demo-form" action="#" method="post">
+                <fieldset>
+                    <legend>Personal details</legend>
+                    <div class="form-row">
+                        <label for="full-name">Full name</label>
+                        <input id="full-name" name="full-name" type="text" placeholder="Your name">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" placeholder="name@example.com">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="form-row">
+                        <label for="birth-date">Date of birth</label>
+                        <input id="birth-date" name="birth-date" type="date">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div class="form-row">
+                        <label for="topic">Favourite topic</label>
+                        <select id="topic" name="topic">
+                            <option value="">Choose a topic</option>
+                            <option>Web development</option>
+                            <option>Design</option>
+                            <option>Photography</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <span>Contact me by</span>
+                        <div class="inline-options">
+                            <label><input type="radio" name="contact" value="email"> Email</label>
+                            <label><input type="radio" name="contact" value="phone"> Phone</label>
+                            <label><input type="radio" name="contact" value="none"> Do not contact me</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <span>Interests</span>
+                        <div class="inline-options">
+                            <label><input type="checkbox" name="interest" value="html"> HTML</label>
+                            <label><input type="checkbox" name="interest" value="css"> CSS</label>
+                            <label><input type="checkbox" name="interest" value="javascript"> JavaScript</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="satisfaction">Satisfaction: <output>7</output>/10</label>
+                        <input id="satisfaction" name="satisfaction" type="range" min="0" max="10" value="7">
+                    </div>
+                    <div class="form-row">
+                        <label for="colour">Favourite colour</label>
+                        <input id="colour" name="colour" type="color" value="#ea4335">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Message and files</legend>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <label for="website">Website</label>
+                        <input id="website" name="website" type="url" placeholder="https://example.com">
+                    </div>
+                    <div class="form-row">
+                        <label for="attachment">Attachment</label>
+                        <input id="attachment" name="attachment" type="file">
+                    </div>
+                    <div class="form-row">
+                        <label for="meeting">Preferred meeting time</label>
+                        <input id="meeting" name="meeting" type="datetime-local">
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Submit (not active)</button>
+                    <button type="reset">Reset</button>
+                    <button type="button">Button</button>
+                </div>
+            </form>
+        </main>
+
+        <footer class="site-footer">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmalousektomas.github.io%2Fgooglesearch%2Fforms.html">Validate HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmalousektomas.github.io%2Fgooglesearch%2Fstyles.css">Validate CSS</a>
+            <a href="https://github.com/malousektomas/googlesearch/blob/main/citace.md">Citations and sources</a>
+            <a href="https://malousektomas.github.io/">Portfolio</a>
+        </footer>
+    </body>
+</html>

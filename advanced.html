@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav class="top-links">
+            <a href="index.html">Google Search</a>
+            <a href="image.html">Image Search</a>
+            <a href="forms.html">Forms</a>
+            <a href="https://malousektomas.github.io/">Portfolio</a>
+        </nav>
+
+        <header class="advanced-header">
+            <h1>Advanced Search</h1>
+        </header>
+
+        <main class="advanced-page">
+            <h2>Find pages with...</h2>
+            <form action="https://www.google.com/search" method="get">
+                <div class="advanced-field">
+                    <label for="all-words">all these words:</label>
+                    <input id="all-words" type="text" name="as_q">
+                </div>
+                <div class="advanced-field">
+                    <label for="exact-phrase">this exact word or phrase:</label>
+                    <input id="exact-phrase" type="text" name="as_epq">
+                </div>
+                <div class="advanced-field">
+                    <label for="any-words">any of these words:</label>
+                    <input id="any-words" type="text" name="as_oq">
+                </div>
+                <div class="advanced-field">
+                    <label for="none-words">none of these words:</label>
+                    <input id="none-words" type="text" name="as_eq">
+                </div>
+                <button class="advanced-button" type="submit">Advanced Search</button>
+            </form>
+        </main>
+        <footer class="site-footer">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmalousektomas.github.io%2Fgooglesearch%2Fadvanced.html">Validate HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmalousektomas.github.io%2Fgooglesearch%2Fstyles.css">Validate CSS</a>
+            <a href="https://github.com/malousektomas/googlesearch/blob/main/citace.md">Citations and sources</a>
+            <a href="https://malousektomas.github.io/">Portfolio</a>
+        </footer>
+    </body>
+</html>

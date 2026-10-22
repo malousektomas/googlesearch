@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #161616;
+    color: #f1f3f4;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: #f1f3f4;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    padding: 24px 28px;
+}
+
+.top-links {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    padding: 22px 28px;
+}
+
+.search-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    padding-top: 150px;
+}
+
+.google-logo {
+    color: #ff1500;
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    margin-bottom: 28px;
+}
+
+.page-label {
+    color: #ea4335;
+    font-size: 16px;
+    margin-left: 205px;
+    margin-top: -40px;
+}
+
+.search-form {
+    max-width: 800px;
+    width: 90%;
+}
+
+.search-input {
+    background: #000000;
+    border: 0px solid #5f6368;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 28%);
+    color: #f1f3f4;
+    font-size: 16px;
+    height: 70px;
+    outline: None;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.search-input:hover,
+.search-input:focus {
+    box-shadow: 0 1px 6px rgb(0 0 0 / 45%);
+}
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    background: #060606;
+    border: 0px solid #020202;
+    border-radius: 10px;
+    color: #f1f3f4;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px 16px;
+}
+
+button:hover {
+    border-color: #121212;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.advanced-header {
+    border-bottom: 1px solid #3c4043;
+    padding: 0 40px 24px;
+}
+
+.advanced-header h1 {
+    color: #ea4335;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.advanced-page {
+    background: #181818;
+    border: 0px solid #212323;
+    border-radius: 10px;
+    margin: 38px auto;
+    max-width: 900px;
+    padding: 0 24px;
+}
+
+.advanced-page h2 {
+    border-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px 24px 12px;
+}
+
+.advanced-page form {
+    border: 0px solid #3b3b3b;
+    border-radius: 0 0 10px 10px;
+    padding: 0 24px 24px;
+}
+
+.advanced-field {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 14px 0;
+}
+
+.advanced-field label {
+    font-size: 13px;
+    min-width: 240px;
+}
+
+.advanced-field input {
+    background: #000000;
+    border: 0px solid #5f6368;
+    border-radius: 10px;
+    color: #f1f3f4;
+    font-size: 13px;
+    height: 38px;
+    max-width: 570px;
+    padding: 5px 12px;
+    width: 100%;
+}
+
+.advanced-field input:hover,
+.advanced-field input:focus {
+    border-color: #ea4335;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 45%);
+    outline: none;
+}
+
+.advanced-button {
+    background: #060606;
+    border-color: #ea4335;
+    color: #f1f3f4;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 20px 0 0 auto;
+    transition: 0.2s ease-in-out;
+}
+
+.advanced-button:hover {
+    background: #ea4335;
+    border-color: #c5221f;
+}
+
+.forms-page {
+    margin: 38px auto;
+    max-width: 900px;
+    padding: 0 24px;
+}
+
+.forms-page h1 {
+    color: #ea4335;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.demo-form {
+    background: #161616;
+    border: 0px solid #3c4043;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.demo-form fieldset {
+    border: 0px solid #5f6368;
+    border-radius: 8px;
+    margin: 0 0 22px;
+    padding: 18px;
+}
+
+.demo-form legend {
+    color: #ea4335;
+    padding: 0 8px;
+}
+
+.form-row {
+    display: grid;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    background: #000000;
+    border: 0px solid #5f6368;
+    border-radius: 10px;
+    color: #f1f3f4;
+    font: inherit;
+    padding: 9px;
+}
+
+.form-row input:hover,
+.form-row input:focus,
+.form-row select:hover,
+.form-row select:focus,
+.form-row textarea:hover,
+.form-row textarea:focus {
+    border-color: #ea4335;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 45%);
+    outline: none;
+}
+
+.form-row textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.inline-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.demo-form input[type="range"] {
+    accent-color: #ea4335;
+}
+
+.demo-form input[type="checkbox"],
+.demo-form input[type="radio"] {
+    accent-color: #ea4335;
+}
+
+.demo-form input[type="color"] {
+    cursor: pointer;
+    min-height: 38px;
+    padding: 3px;
+}
+
+.demo-form input[type="file"] {
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.form-actions button {
+    font-size: 16px;
+}
+
+.non-functional-note {
+    color: #aeb0b3;
+    font-size: 13px;
+    margin: 0 0 18px;
+}
+
+@media (max-width: 650px) {
+    .advanced-page {
+        margin: 30px 20px;
+        padding: 0;
+    }
+
+    .advanced-header {
+        padding-left: 20px;
+    }
+
+    .advanced-page form {
+        padding: 0 18px 18px;
+    }
+
+    .advanced-field {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .advanced-field label {
+        min-width: 0;
+    }
+
+    .advanced-button {
+        margin-left: 0;
+    }
+
+    .demo-form {
+        padding: 16px;
+    }
+}
